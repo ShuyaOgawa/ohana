@@ -2,7 +2,18 @@
   "permissions": {
     "allow": [
       "WebFetch(domain:claude.ai)",
-      "Bash(npx create-next-app@latest:*)"
+      "Bash(npx create-next-app@latest:*)",
+      "Bash(npm install:*)",
+      "Bash(npm run build:*)",
+      "Bash(npm run test:*)",
+      "Bash(npx playwright test:*)",
+      "Bash(npm run dev:*)",
+      "Bash(npx playwright install:*)",
+      "Bash(curl:*)",
+      "Bash(npx next start:*)",
+      "Bash(powershell -Command:*)",
+      "Bash(set BASE_URL=http://localhost:3099)",
+      "Bash(gh auth:*)"
     ]
   }
 }
