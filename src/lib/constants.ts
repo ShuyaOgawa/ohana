@@ -25,4 +25,4 @@ export const CTA_BUTTON_TEXT = "お問い合わせはこちら";
 export const COPYRIGHT = "© 2025 ソーシャルサポート Ohana　小川知美";
 
 export const CONTACT_NOTE =
-  "お問い合わせはメールまたはFAXにてお受けしております。内容を確認のうえ、折り返しご連絡いたします。";
+  "お問い合わせはこちらのフォーム、メール、またはFAXにてお受けしております。内容を確認のうえ、折り返しご連絡いたします。";
