@@ -108,11 +108,11 @@ export default function ContactForm() {
           })}
           defaultValue=""
         >
-          <option value="" disabled>
+          <option value="" disabled className="text-gray-500 bg-white">
             ご相談内容を選択してください
           </option>
           {CONSULTATION_OPTIONS.map((option) => (
-            <option key={option.value} value={option.value}>
+            <option key={option.value} value={option.value} className="text-gray-800 bg-white">
               {option.label}
             </option>
           ))}
