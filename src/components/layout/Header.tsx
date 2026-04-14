@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { NAV_ITEMS } from "@/data/navigation";
@@ -10,6 +10,7 @@ export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
+  const handleCloseMobileMenu = useCallback(() => setIsMobileMenuOpen(false), []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -71,7 +72,7 @@ export default function Header() {
 
       <MobileMenu
         isOpen={isMobileMenuOpen}
-        onClose={() => setIsMobileMenuOpen(false)}
+        onClose={handleCloseMobileMenu}
       />
     </>
   );
