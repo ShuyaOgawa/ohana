@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Badge from "@/components/ui/Badge";
 import {
   HERO_TAG,
@@ -54,9 +55,21 @@ export default function HeroSection() {
       </div>
 
       {/* 右カラム */}
-      <div className="bg-cream flex flex-col justify-center items-start px-8 py-16 md:px-20 md:py-20 md:pt-36 relative">
+      <div className="relative flex flex-col justify-center items-start px-8 py-16 md:px-20 md:py-20 md:pt-36 overflow-hidden">
+        {/* 背景画像 */}
+        <Image
+          src="/images/hero-side-v2.jpg"
+          alt=""
+          fill
+          className="object-cover"
+          priority
+          sizes="(max-width: 768px) 100vw, 50vw"
+        />
+        {/* オーバーレイ */}
+        <div className="absolute inset-0 bg-cream/10" />
+
         {/* Ohana 装飾テキスト */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-display text-[80px] md:text-[180px] font-light text-sand-light tracking-[0.05em] pointer-events-none whitespace-nowrap opacity-50 select-none">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-display text-[80px] md:text-[180px] font-light text-sand-light tracking-[0.05em] pointer-events-none whitespace-nowrap opacity-40 select-none">
           Ohana
         </div>
 

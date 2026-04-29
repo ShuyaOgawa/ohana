@@ -65,7 +65,7 @@ export default function RootLayout({
       lang="ja"
       className={`${cormorant.variable} ${notoSerif.variable} ${notoSans.variable}`}
     >
-      <head>
+      <body className="min-h-screen flex flex-col antialiased">
         {GA_MEASUREMENT_ID && (
           <>
             <Script
@@ -82,8 +82,6 @@ export default function RootLayout({
             </Script>
           </>
         )}
-      </head>
-      <body className="min-h-screen flex flex-col antialiased">
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
