@@ -17,6 +17,11 @@ export default function OfficeInfo() {
       value: COMPANY_INFO.email,
       href: `mailto:${COMPANY_INFO.email}`,
     },
+    {
+      label: "営業時間",
+      value: `${COMPANY_INFO.businessHours}（平日のみ）`,
+    },
+    { label: "定休日", value: COMPANY_INFO.closedDays },
     ...(COMPANY_INFO.established
       ? [{ label: "設立", value: COMPANY_INFO.established }]
       : []),

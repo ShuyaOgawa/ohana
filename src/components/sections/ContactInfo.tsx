@@ -18,6 +18,10 @@ export default function ContactInfo() {
       value: COMPANY_INFO.email,
       href: `mailto:${COMPANY_INFO.email}`,
     },
+    {
+      label: "BUSINESS HOURS",
+      value: `${COMPANY_INFO.businessHours}（平日のみ／${COMPANY_INFO.closedDays}休み）`,
+    },
     { label: "NOTE", value: CONTACT_NOTE, isNote: true },
   ];
 

@@ -42,6 +42,8 @@ export type CompanyInfo = {
   address: string;           // 住所
   fax: string;               // FAX番号
   email: string;             // メールアドレス
+  businessHours: string;     // 営業時間
+  closedDays: string;        // 定休日
   established?: string;      // 設立日（後日確認）
 };
 
@@ -148,6 +150,8 @@ export const COMPANY_INFO: CompanyInfo = {
   address: "千葉県船橋市本町2-16-4",
   fax: "047-750-1871",
   email: "beachmemory777@gmail.com",
+  businessHours: "9:00〜18:00",
+  closedDays: "土日祝日・年末年始",
   established: "", // 後日確認
 };
 
@@ -247,7 +251,7 @@ NEXT_PUBLIC_GA_MEASUREMENT_ID=（後日設定）
 ## 5. データフロー
 
 ```
-data/company.ts ──→ OfficeInfo, ContactInfo, Footer, ProfileSection
+data/company.ts ──→ OfficeInfo, ContactInfo, Footer (営業時間含む), ProfileSection
 data/services.ts ──→ ServicesSection, ServicesDetail, ServiceCard
 data/navigation.ts ──→ Header, MobileMenu
 lib/constants.ts ──→ HeroSection, CtaSection, layout.tsx, sitemap.ts, ContactForm
@@ -260,3 +264,4 @@ lib/constants.ts ──→ HeroSection, CtaSection, layout.tsx, sitemap.ts, Cont
 | バージョン | 日付 | 内容 |
 |-----------|------|------|
 | 1.0 | 2026-04-14 | 初版作成 |
+| 1.1 | 2026-04-29 | CompanyInfo に営業時間・定休日フィールドを追加 |

@@ -12,6 +12,8 @@ export const COMPANY_INFO: CompanyInfo = {
   address: "千葉県船橋市本町2-16-4",
   fax: "047-750-1871",
   email: "beachmemory777@gmail.com",
+  businessHours: "9:00〜18:00",
+  closedDays: "土日祝日・年末年始",
   established: "",
 };
 

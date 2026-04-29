@@ -149,12 +149,15 @@ type MobileMenuProps = {
 | ディレクティブ | なし（Server Component） |
 
 ```typescript
-// Props: なし
+// Props: なし（データは data/company.ts + lib/constants.ts から取得）
 
 // レンダリング:
 // <footer>
-//   <span> Social Support Ohana (テキストロゴ)
-//   <span> © 2025 ソーシャルサポート Ohana 小川知美
+//   <div> (上段: 営業時間)
+//     <p> 営業時間 9:00〜18:00（平日のみ／土日祝日・年末年始休み）
+//   <div> (下段: ロゴ + コピーライト)
+//     <span> Social Support Ohana (テキストロゴ)
+//     <span> © 2025 ソーシャルサポート Ohana 小川知美
 // </footer>
 ```
 
@@ -245,7 +248,7 @@ type MobileMenuProps = {
 //   <SectionLabel label="Office" />
 //   <SectionTitle title="事務所情報" />
 //   <table> or <dl>
-//     事務所名 / 代表者 / 所在地 / FAX / メール / 設立
+//     事務所名 / 代表者 / 所在地 / FAX / メール / 営業時間 / 定休日 / 設立
 //   </table>
 // </section>
 ```
@@ -373,7 +376,7 @@ type MobileMenuProps = {
 // Props: なし（データは data/company.ts から取得）
 
 // レンダリング:
-// 事務所名 / 代表者 / 所在地 / FAX / メール / 備考
+// 事務所名 / 代表者 / 所在地 / FAX / メール / 営業時間 / 備考
 ```
 
 ### 3.11 PageHeader
@@ -536,7 +539,7 @@ type ScrollFadeInProps = {
 |---------------|------|------|
 | Header | Client | スクロール検知、メニュー開閉状態管理 |
 | MobileMenu | Client | 開閉アニメーション、body overflow 制御 |
-| Footer | Server | インタラクション不要 |
+| Footer | Server | インタラクション不要（営業時間表示あり） |
 | HeroSection | Server | CSS animationのみ（JSイベント不要） |
 | AboutSection | Server | 静的コンテンツ |
 | AboutDetail | Server | 静的コンテンツ |
@@ -562,3 +565,4 @@ type ScrollFadeInProps = {
 | バージョン | 日付 | 内容 |
 |-----------|------|------|
 | 1.0 | 2026-04-14 | 初版作成 |
+| 1.1 | 2026-04-29 | OfficeInfo・ContactInfo・Footer に営業時間を追加 |

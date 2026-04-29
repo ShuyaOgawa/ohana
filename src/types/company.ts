@@ -9,6 +9,8 @@ export type CompanyInfo = {
   address: string;
   fax: string;
   email: string;
+  businessHours: string;
+  closedDays: string;
   established?: string;
 };
 
