@@ -13,7 +13,7 @@ export const HERO_DESCRIPTION =
   "専門職後見人・独立型社会福祉士として、\n認知症・知的障害・精神障害のある方の\n生活と権利をサポートいたします。";
 
 export const HERO_BADGES = [
-  "千葉県社会福祉士会 ぱあとなあ千葉 登録",
+  "千葉県社会福祉士会 権利擁護センター ぱあとなあ千葉 登録",
   "専門職後見人",
   "独立型社会福祉士",
   "認知症・知的障害・精神障害 対応",
@@ -22,7 +22,7 @@ export const HERO_BADGES = [
 export const CTA_TEXT = "まずはお気軽にご相談ください";
 export const CTA_BUTTON_TEXT = "お問い合わせはこちら";
 
-export const COPYRIGHT = "© 2025 ソーシャルサポート Ohana　小川知美";
+export const COPYRIGHT = "© 2026 ソーシャルサポート Ohana　小川知美";
 
 export const CONTACT_NOTE =
   "お問い合わせはこちらのフォーム、メール、またはFAXにてお受けしております。内容を確認のうえ、折り返しご連絡いたします。";
